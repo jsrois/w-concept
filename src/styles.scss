@@ -1,0 +1,28 @@
+#info-menu {
+  width: 20%;
+  position: absolute;
+  background: lightblue;
+  z-index: 1;
+  height: 100vh;
+  right: 0;
+  padding: 20px;
+  &.hidden {
+    left: 100%;
+  }
+}
+
+#world-map {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  svg {
+    path.participant {
+      fill: #e64b38;
+
+      &:hover {
+        fill: crimson;
+        cursor: pointer;
+      }
+    }
+  }
+}
