@@ -1,0 +1,26 @@
+{
+  "name": "tsn-mayfirst-webpage-concept",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github-as-jsrois:jsrois/w-concept.git",
+  "author": "jsrois",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config webpack.config.js --content-base dist/",
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
