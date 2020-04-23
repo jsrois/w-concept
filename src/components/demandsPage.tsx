@@ -9,5 +9,5 @@ export const DemandsPage = (): JSX.Element =>
             <p className="hero-text__phrase third">housing for all, immediately</p>
             <p className="hero-text__phrase fourth">free sandwiches and free beer🍻</p>
         </div>
-        <ReactTooltip id="tt-demands"> Here we will put our demands. The image is a placeholder.</ReactTooltip>
+        <ReactTooltip id="tt-demands"> Here we could put our demands. The image is a placeholder.</ReactTooltip>
     </div>;
