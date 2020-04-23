@@ -28,26 +28,23 @@ header {
   }
 
   .navigation-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: start;
     width: 100%;
-    color: white;
-    overflow: hidden;
+    background: lightgray;
+
+    display: flex;
+    justify-content: start;
 
     a {
-      height: 100%;
+      display: block;
       text-decoration: none;
-      margin-left: 1em;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
+      padding: 20px 14px;
 
       &:hover {
-        background: lightgray;
+        background: black;
+        color: white;
+
       }
+
     }
   }
 }
