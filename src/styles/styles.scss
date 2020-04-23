@@ -14,7 +14,7 @@ header {
 
   .navigation-bar {
     width: 100%;
-    background: lightgray;
+    background: $color3;
 
     display: flex;
     justify-content: start;
@@ -22,11 +22,12 @@ header {
     a {
       display: block;
       text-decoration: none;
+      color: $color5;
       padding: 20px 14px;
 
       &:hover {
-        background: black;
-        color: white;
+        background: $color2;
+        color: $color5;
 
       }
 
@@ -34,14 +35,11 @@ header {
   }
 }
 
-.page-content {
-  height: 8000px;
-}
-
 footer {
   height: 5em;
   width: 100%;
-  background: $color5;
+  background: $color3;
+  color: $color5;
   text-align: center;
   padding-top: 0.4em;
 
@@ -53,7 +51,9 @@ footer {
     .link {
       width: 1em;
       margin: 10px;
-
+      fill: $color5;
     }
   }
 }
+
+@import 'demands-content';

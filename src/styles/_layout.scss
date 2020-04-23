@@ -1,5 +1,6 @@
 $maxPageWidth: 1600px;
 $headerHeight: 64px;
+$footerHeight: 128px;
 
 body {
   max-width: $maxPageWidth;
@@ -23,12 +24,15 @@ body {
 
   &__content {
     flex: auto;
+    display: flex;
     min-height: $headerHeight;
     margin-top: $headerHeight;
   }
 
   &__footer {
     flex:auto;
+    max-height: $footerHeight;
+
   }
 
 }
