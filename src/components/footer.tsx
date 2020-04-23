@@ -3,7 +3,7 @@ import facebookLogo from "../images/social/facebook.svg";
 import twitterLogo from "../images/social/twitter.svg";
 
 export const Footer = (): JSX.Element =>
-    <footer>
+    <footer className="vertical-layout__footer">
         <div>
             Follow us:
             <div className="social-media-links">

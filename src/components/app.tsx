@@ -6,8 +6,10 @@ import {Content} from "./content";
 
 export const App = (): JSX.Element => (
     <Router>
-        <Header/>
-        <Content />
-        <Footer />
+        <div className="vertical-layout">
+            <Header/>
+            <Content/>
+            <Footer/>
+        </div>
     </Router>
 );

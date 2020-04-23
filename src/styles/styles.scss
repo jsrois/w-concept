@@ -1,0 +1,59 @@
+
+body {
+  font-family: 'Lucida Grande';
+}
+
+header {
+  flex:none;
+  height: 4em;
+  display: flex;
+
+  .logo {
+    height: 100%;
+  }
+
+  .navigation-bar {
+    width: 100%;
+    background: lightgray;
+
+    display: flex;
+    justify-content: start;
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 20px 14px;
+
+      &:hover {
+        background: black;
+        color: white;
+
+      }
+
+    }
+  }
+}
+
+.page-content {
+  height: 8000px;
+}
+
+footer {
+  height: 5em;
+  width: 100%;
+  background: $color5;
+  text-align: center;
+  padding-top: 0.4em;
+
+
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+
+    .link {
+      width: 1em;
+      margin: 10px;
+
+    }
+  }
+}

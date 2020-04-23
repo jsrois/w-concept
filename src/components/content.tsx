@@ -4,7 +4,7 @@ import {DemandsPage} from "./demandsPage";
 import {OrganizationsPage} from "./organizationsPage";
 
 export const Content = (): JSX.Element => (
-    <div className="page-content">
+    <div className="vertical-layout__content">
         <Switch>
             <Route exact path="/" component={DemandsPage}/>
             <Route path="/organizations" component={OrganizationsPage}/>
