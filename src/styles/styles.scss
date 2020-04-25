@@ -1,35 +1,43 @@
 
 body {
-  font-family: 'Mosk Medium 500','Lucida Grande', serif;
+  font-family: 'Mosk Medium 500', 'Lucida Grande', serif;
 }
 
 header {
-  flex:none;
+  flex: none;
   height: 4em;
   display: flex;
+  background: $color3;
 
-  .logo {
-    height: 100%;
+  .logo-box {
+    background-color: $color2;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+    .logo {
+      height: 80%;
+    }
   }
+
 
   .navigation-bar {
     width: 100%;
-    background: $color3;
 
     display: flex;
     justify-content: start;
+    -webkit-box-shadow: 2px 3px 3px 1px $color3-shadow;
+    -moz-box-shadow: 2px 3px 3px 1px $color3-shadow;
+    box-shadow: 2px 3px 3px 1px $color3-shadow;
 
     a {
       display: block;
       text-decoration: none;
       color: $color5;
       padding: 20px 14px;
-
-      &:hover {
-        background: $color2;
-        color: $color5;
-
-      }
+      @include background-fades-on-hover-to($color1);
 
     }
   }

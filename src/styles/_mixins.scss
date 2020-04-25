@@ -1,0 +1,9 @@
+@mixin background-fades-on-hover-to($color) {
+  transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-duration: .3s;
+
+  &:hover {
+    background-color: $color;
+  }
+}
