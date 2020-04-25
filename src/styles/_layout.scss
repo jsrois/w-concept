@@ -1,6 +1,7 @@
 $maxPageWidth: 1800px;
 $headerHeight: 64px;
 $footerHeight: 128px;
+$front: 1000;
 
 body {
   max-width: $maxPageWidth;
@@ -21,6 +22,7 @@ body {
     width: 100%;
     height: $headerHeight;
     max-width: $maxPageWidth;
+    z-index: $front;
   }
 
   &__content {
