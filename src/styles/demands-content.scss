@@ -1,12 +1,12 @@
 
 .demands-content {
-  padding: 32px 32px;
+  padding: 32px;
   width: 100%;
 
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/demo_photo.png");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/demo_photo.png');
 
   background-position: center;
   background-repeat: no-repeat;
@@ -14,19 +14,20 @@
 }
 
 .hero-text {
-  text-align: center;
+  align-items: center;
 
   color: $color5;
-  font-size: x-large;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: x-large;
+  text-align: center;
+  font-family: Cunia;
 
   &__phrase {
     background-color: $color2;
     color: $color5;
     line-height: 2.4;
-    width: max-content;
     padding: 0 21.3px;
+    width: max-content;
   }
 }
