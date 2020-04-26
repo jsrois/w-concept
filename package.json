@@ -11,11 +11,15 @@
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
     "@types/jquery": "^3.3.35",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
     "@types/react-router-dom": "^5.1.4",
     "@types/react-tooltip": "^3.11.0",
+    "babel-loader": "^8.1.0",
     "css-loader": "^3.5.2",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.2.0",
@@ -25,6 +29,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
+    "react-simple-maps": "^2.0.0",
     "react-tooltip": "^4.2.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.4",

@@ -4,7 +4,9 @@
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "jsx": "react"
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
     "node_modules"
