@@ -1,3 +1,17 @@
 .organisations-content {
-
+  &__overlay-message {
+    position: absolute;
+    z-index: 1;
+    height: 50%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffffe3;
+    transform: translate(-50%,-50%);
+    transition: all 800ms ease-in;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

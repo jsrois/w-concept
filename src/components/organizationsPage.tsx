@@ -1,5 +1,6 @@
 import * as React from "react";
-const Map = require("./map.jsx").default;
+import {Map} from "./map";
+
 
 export const OrganizationsPage = (): JSX.Element => {
 
