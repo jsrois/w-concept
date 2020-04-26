@@ -7,7 +7,7 @@ const defaultGeographyStyle = {
     default: {
         fill: "#fff8f0",
         stroke: "#B2A27D",
-        strokeWidth: 0.75,
+        strokeWidth: 0.45,
         outline: "none",
         transition: "all 250ms"
     },
@@ -32,22 +32,22 @@ const networkGeographyStyle = {
     default: {
         fill: "#3f0d12",
         stroke: "#B2A27D",
-        strokeWidth: 0.75,
+        strokeWidth: 0.45,
         outline: "none",
         transition: "all 250ms",
         cursor: "pointer"
     },
     hover: {
-        fill: "#de3c4b",
-        stroke: "#9E1030",
+        fill: "#8c271e",
+        stroke: "#8c271e",
         strokeWidth: 0.75,
         outline: "none",
         transition: "all 250ms",
         cursor: "pointer"
     },
     pressed: {
-        fill: "#DD4132",
-        stroke: "#9E1030",
+        fill: "#8c271e",
+        stroke: "#8c271e",
         strokeWidth: 0.75,
         outline: "none",
         transition: "all 250ms",

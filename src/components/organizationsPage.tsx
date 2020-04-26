@@ -5,6 +5,7 @@ import {useState} from "react";
 const countries = [
     "United States of America",
     "Spain",
+    "Portugal",
     "Italy",
     "Argentina",
     "Canada",
@@ -22,9 +23,9 @@ interface CountryInfo {
     text: String;
 }
 
-const noCountry = {name: "", text:""} as CountryInfo;
+const noCountry = {name: "", text: ""} as CountryInfo;
 
-const OverlayMessage = (props: {info: CountryInfo, onClickClose: () => void}): JSX.Element => (
+const OverlayMessage = (props: { info: CountryInfo, onClickClose: () => void }): JSX.Element => (
     <div className="organisations-content__overlay-message">
         <p>{props.info.name}</p>
         <p>{props.info.text}</p>
@@ -37,13 +38,13 @@ export const OrganizationsPage = (): JSX.Element => {
     const [overlayInfo, setOverlayInfo] = useState(noCountry);
 
     const onCountryClicked = (countryName: String) => () => {
-        setOverlayInfo({ name: countryName, text: "Here goes the country information"} as CountryInfo);
+        setOverlayInfo({name: countryName, text: "Here goes the country information"} as CountryInfo);
         setShowOverlay(true);
         return;
     }
 
     return <div className="organisations-content">
-        {showOverlay && <OverlayMessage info={overlayInfo} onClickClose={() => setShowOverlay(false)} />}
+        {showOverlay && <OverlayMessage info={overlayInfo} onClickClose={() => setShowOverlay(false)}/>}
         <Map countriesInNetwork={countries} onCountryClicked={onCountryClicked}/>
     </div>;
 };
