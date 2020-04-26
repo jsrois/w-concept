@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {ComposableMap, Geographies, Geography} from "react-simple-maps";
+import {useState} from "react";
 
 
 const defaultGeographyStyle = {
@@ -33,68 +34,69 @@ const networkGeographyStyle = {
         stroke: "#B2A27D",
         strokeWidth: 0.75,
         outline: "none",
-        transition: "all 250ms"
+        transition: "all 250ms",
+        cursor: "pointer"
     },
     hover: {
         fill: "#de3c4b",
         stroke: "#9E1030",
         strokeWidth: 0.75,
         outline: "none",
-        transition: "all 250ms"
+        transition: "all 250ms",
+        cursor: "pointer"
     },
     pressed: {
         fill: "#DD4132",
         stroke: "#9E1030",
         strokeWidth: 0.75,
         outline: "none",
-        transition: "all 250ms"
+        transition: "all 250ms",
+        cursor: "pointer"
     }
 };
 
-const countriesInNetwork = [
-    "United States of America",
-    "Spain",
-    "Italy",
-    "Argentina",
-    "Canada",
-    "Germany",
-    "Greece",
-    "Netherlands",
-    "Belgium",
-    "United Kingdom",
-    "Ireland",
-    "New Zealand"
-];
 
-export const Map = (): JSX.Element => (
-    <div id="organisations-content__world-map">
-        <ComposableMap
-            projectionConfig={{
-                scale: 205,
-                rotate: [-11, 0, 0]
-            }}
-            width={980}
-            height={551}
-            style={{
-                width: "100%",
-                height: "auto"
-            }}
-        >
-            <Geographies
-                geography="https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json">
-                {children => (
-                    children.geographies.map(geography => {
-                            const countryName = geography.properties.NAME;
-                            return <Geography
-                                key={countryName}
-                                geography={geography}
-                                style={countriesInNetwork.includes(countryName) ?
-                                    networkGeographyStyle :
-                                    defaultGeographyStyle}/>;
-                        }
-                    )
-                )}
-            </Geographies>
-        </ComposableMap>
-    </div>
-);
+
+
+export interface Props {
+    countriesInNetwork: String[];
+    onCountryClicked: (country: String) =>  () => void;
+}
+
+export const Map = (props: Props): JSX.Element => {
+
+        return <div id="organisations-content__world-map">
+
+            <ComposableMap
+                projectionConfig={{
+                    scale: 205,
+                    rotate: [-11, 0, 0]
+                }}
+                width={980}
+                height={551}
+                style={{
+                    width: "100%",
+                    height: "auto"
+                }}
+            >
+                <Geographies
+                    geography="https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json">
+                    {children => (
+                        children.geographies.map(geography => {
+                                const countryName = geography.properties.NAME;
+                                return <Geography
+                                    key={countryName}
+                                    geography={geography}
+                                    style={props.countriesInNetwork.includes(countryName) ?
+                                        networkGeographyStyle :
+                                        defaultGeographyStyle}
+                                    onMouseUp={props.countriesInNetwork.includes(countryName) ? props.onCountryClicked(countryName) : () => {}}
+                                />;
+                            }
+                        )
+                    )}
+                </Geographies>
+            </ComposableMap>
+        </div>
+    }
+;
