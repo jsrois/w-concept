@@ -1,0 +1,126 @@
+{
+  "organizations": [
+    {
+      "name": "Sindicat de Llogateres",
+      "location": "Catalunya",
+      "key": "sll-cat",
+      "markerCoordinates": [2.1734, 41.3851]
+    },
+    {
+      "name": "Autonomous Tenants Union Network, NY",
+      "location": "New York, USA",
+      "key": "atun-ny",
+      "markerCoordinates": [-74.0060, 40.7128]
+    },
+    {
+      "name": "Inquilinos Agrupados",
+      "location": "Buenos Aires, Argentina",
+      "key": "ia-arg",
+      "markerCoordinates": [-58.3816, -34.6037]
+    },
+    {
+      "name": "Action Logement Bruxelles",
+      "location": "Brussels, Belgium",
+      "key": "al-bru",
+      "markerCoordinates": [4.3517, 50.8503]
+    },
+    {
+      "name": "LA Tenants Union",
+      "location": "Los Angeles, USA",
+      "key": "tu-la",
+      "markerCoordinates": [-118.2437, 34.0522]
+    },
+    {
+      "name": "Stop Demovictions Burnaby",
+      "location": "Burnaby, Vancouver",
+      "key": "sd-bur",
+      "markerCoordinates": [-122.9805, 49.2488]
+    },
+    {
+      "name": "London",
+      "location": "London",
+      "key": "london",
+      "markerCoordinates": [-0.1278, 51.5074]
+    },
+    {
+      "name": "Brighton",
+      "location": "Brighton",
+      "key": "Brighton",
+      "markerCoordinates": [-0.1372, 50.8225]
+    },
+    {
+      "name": "Glasgow",
+      "location": "Glasgow",
+      "key": "Glasgow",
+      "markerCoordinates": [-4.2518, 55.8642]
+    },
+    {
+      "name": "Edimburgh",
+      "location": "Edimburgh",
+      "key": "Edimburgh",
+      "markerCoordinates": [-3.1883, 55.9533]
+    },
+    {
+      "name": "Dublin",
+      "location": "Dublin",
+      "key": "Dublin",
+      "markerCoordinates": [-6.2603, 53.3498]
+    },
+    {
+      "name": "Amsterdam",
+      "location": "Amsterdam",
+      "key": "Amsterdam",
+      "markerCoordinates": [4.8945, 52.3667]
+    },
+    {
+      "name": "Witten",
+      "location": "Witten",
+      "key": "Witten",
+      "markerCoordinates": [7.3532, 51.4439]
+    },
+    {
+      "name": "Berlin",
+      "location": "Berlin",
+      "key": "Berlin",
+      "markerCoordinates": [13.4050, 52.5200]
+    },
+    {
+      "name": "Athens",
+      "location": "Athens",
+      "key": "Athens",
+      "markerCoordinates": [23.7275, 37.9838]
+    },
+    {
+      "name": "Rome",
+      "location": "Rome",
+      "key": "Rome",
+      "markerCoordinates": [12.4964, 41.9028]
+    },
+    {
+      "name": "Wellington",
+      "location": "Wellington",
+      "key": "Wellington",
+      "markerCoordinates": [174.7762, -41.2865]
+    },
+    {
+      "name": "Philadelphia",
+      "location": "Philadelphia",
+      "key": "Philadelphia",
+      "markerCoordinates": [-75.1652, 39.9526]
+    },
+    {
+      "name": "Gran Canaria",
+      "location": "Gran Canaria",
+      "key": "Gran Canaria",
+      "markerCoordinates": [-15.5474, 27.9202]
+    },
+    {
+      "name": "Madrid",
+      "location": "Madrid",
+      "key": "Madrid",
+      "markerCoordinates": [-3.7038, 40.4168]
+    }
+
+
+  ]
+}

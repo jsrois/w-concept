@@ -1,66 +1,11 @@
 import * as React from 'react';
-import {ComposableMap, Geographies, Geography} from "react-simple-maps";
-import {useState} from "react";
-
-
-const defaultGeographyStyle = {
-    default: {
-        fill: "#fff8f0",
-        stroke: "#B2A27D",
-        strokeWidth: 0.45,
-        outline: "none",
-        transition: "all 250ms"
-    },
-    hover: {
-        fill: "#fff8f0",
-        stroke: "#B2A27D",
-        strokeWidth: 0.75,
-        outline: "none",
-        transition: "all 250ms"
-    },
-    pressed: {
-        fill: "#fff8f0",
-        stroke: "#B2A27D",
-        strokeWidth: 0.75,
-        outline: "none",
-        transition: "all 250ms"
-    }
-
-};
-
-const networkGeographyStyle = {
-    default: {
-        fill: "#3f0d12",
-        stroke: "#B2A27D",
-        strokeWidth: 0.45,
-        outline: "none",
-        transition: "all 250ms",
-        cursor: "pointer"
-    },
-    hover: {
-        fill: "#8c271e",
-        stroke: "#8c271e",
-        strokeWidth: 0.75,
-        outline: "none",
-        transition: "all 250ms",
-        cursor: "pointer"
-    },
-    pressed: {
-        fill: "#8c271e",
-        stroke: "#8c271e",
-        strokeWidth: 0.75,
-        outline: "none",
-        transition: "all 250ms",
-        cursor: "pointer"
-    }
-};
-
-
-
+import {ComposableMap, Geographies, Geography, Marker} from "react-simple-maps";
+import {OrganizationInfo} from "./organizationsPage";
 
 export interface Props {
     countriesInNetwork: String[];
-    onCountryClicked: (country: String) =>  () => void;
+    organizations: OrganizationInfo[];
+    onCountryClicked: (country: String) => () => void;
 }
 
 export const Map = (props: Props): JSX.Element => {
@@ -87,15 +32,19 @@ export const Map = (props: Props): JSX.Element => {
                                 return <Geography
                                     key={countryName}
                                     geography={geography}
-                                    style={props.countriesInNetwork.includes(countryName) ?
-                                        networkGeographyStyle :
-                                        defaultGeographyStyle}
-                                    onMouseUp={props.countriesInNetwork.includes(countryName) ? props.onCountryClicked(countryName) : () => {}}
+                                    onMouseUp={props.countriesInNetwork.includes(countryName) ? props.onCountryClicked(countryName) : () => {
+                                    }}
                                 />;
                             }
                         )
                     )}
                 </Geographies>
+                {props.organizations.map(organization =>
+                    <Marker className="map-marker"
+                            coordinates={organization.markerCoordinates}>
+                        <circle className="map-marker__circle" r={4}/>
+                    </Marker>
+                )}
             </ComposableMap>
         </div>
     }

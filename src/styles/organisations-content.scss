@@ -7,13 +7,42 @@
     top: 50%;
     left: 50%;
     background-color: #ffffffe3;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: all 800ms ease-in;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     animation: appear 0.3s ease;
+  }
+
+}
+
+.rsm-geography {
+  fill: $color5;
+  stroke: #fff8f043;
+  strokeWidth: 0.45;
+  outline: none;
+  transition: all 250ms;
+
+  &:hover {
+    fill: $color5;
+    stroke: #fff8f043;
+    strokeWidth: 0.75;
+    outline: none;
+    transition: all 250ms;
+  }
+}
+
+.map-marker {
+  &__circle {
+    stroke: $color1;
+    fill: rgba(0,0,0,0);
+    transition: all ease-in-out 350ms;
+
+    &:hover {
+      transform: scale(2);
+    }
   }
 }
 

@@ -1,6 +1,7 @@
 import * as React from "react";
 import {Map} from "./map";
 import {useState} from "react";
+import * as Data from "../data/organizations.json"
 
 const countries = [
     "United States of America",
@@ -17,6 +18,17 @@ const countries = [
     "Ireland",
     "New Zealand"
 ];
+
+
+export interface OrganizationInfo {
+    name: string;
+    location: string;
+    key: string;
+    markerCoordinates: [number, number];
+    description?: String;
+}
+
+const organizations = Data.organizations as OrganizationInfo[];
 
 interface CountryInfo {
     name: String;
@@ -45,6 +57,6 @@ export const OrganizationsPage = (): JSX.Element => {
 
     return <div className="organisations-content">
         {showOverlay && <OverlayMessage info={overlayInfo} onClickClose={() => setShowOverlay(false)}/>}
-        <Map countriesInNetwork={countries} onCountryClicked={onCountryClicked}/>
+        <Map countriesInNetwork={countries} organizations={organizations} onCountryClicked={onCountryClicked}/>
     </div>;
 };
