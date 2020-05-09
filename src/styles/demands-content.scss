@@ -29,34 +29,22 @@
   text-align: center;
 
   &__phrase {
-    background-color: $color2;
-    color: $color5;
-    line-height: 2.4;
-    padding: 0 21.3px;
-    width: max-content;
+
+    width: 90%;
+    padding: 0 24px;
+    border-radius: 3px;
+    margin-bottom: 18px;
+
+    .title {
+      background-color: $color2;
+      color: $color5;
+      line-height: 3.6;
+      padding: 0 21.3px;
+      width: max-content;
+
+    }
 
     @include background-fades-on-hover-to($color1);
 
-    &.first {
-      transform: translateX(-40%);
-    }
-
-    &.second {
-      transform: translateX(+20%);
-    }
-
-    &.third {
-      transform: translateX(+4%);
-    }
-
-    &.fourth {
-      transform: translateX(-22%);
-    }
-  }
-
-  &__phrase {
-    -webkit-box-shadow: 2px 3px 3px 1px $color3-shadow;
-    -moz-box-shadow: 2px 3px 3px 1px $color3-shadow;
-    box-shadow: 2px 3px 3px 1px $color3-shadow;
   }
 }
