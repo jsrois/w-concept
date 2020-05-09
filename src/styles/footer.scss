@@ -1,0 +1,20 @@
+footer {
+  height: 5em;
+  width: 100%;
+  background: $color3;
+  color: $color5;
+  text-align: center;
+  padding-top: 1.2em;
+
+
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+
+    .link {
+      width: 1em;
+      margin: 10px;
+      fill: $color5;
+    }
+  }
+}
