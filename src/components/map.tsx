@@ -10,7 +10,7 @@ export interface Props {
 
 export const Map = (props: Props): JSX.Element => {
 
-        return <div id="organisations-content__world-map">
+        return <div className="organisations-content__world-map">
 
             <ComposableMap
                 projectionConfig={{

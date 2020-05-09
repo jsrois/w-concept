@@ -1,4 +1,12 @@
 .organisations-content {
+  display: flex;
+  justify-content: center;
+
+  &__world-map {
+    max-width: 80%;
+    border: 2px solid $color2;
+  }
+
   &__overlay-message {
     position: absolute;
     z-index: 1;
@@ -39,6 +47,7 @@
     stroke: $color1;
     fill: rgba(0,0,0,0);
     transition: all ease-in-out 350ms;
+    cursor: pointer;
 
     &:hover {
       transform: scale(2);
