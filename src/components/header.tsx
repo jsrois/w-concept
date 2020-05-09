@@ -6,11 +6,12 @@ import ReactTooltip from "react-tooltip";
 export const Header = (): JSX.Element => (
     <header className="vertical-layout__header">
         <nav className="navigation-bar">
-            <div className="logo-box">
+            <div className="navigation-bar__logo logo-box">
                 <img className="logo" src={logo}/>
             </div>
-            <Link  to="/covid19-demands">Covid-19 Crisis</Link>
-            <Link to="/organizations">The Network</Link>
+            <Link className="navigation-bar__link" to="/articles">News</Link>
+            <Link className="navigation-bar__link" to="/covid19-demands">Covid-19</Link>
+            <Link className="navigation-bar__link" to="/organizations">The Network</Link>
         </nav>
     </header>
 );

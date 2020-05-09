@@ -9,19 +9,6 @@ header {
   display: flex;
   background: $color3;
 
-  .logo-box {
-    background-color: $color2;
-    width: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 30px;
-
-    .logo {
-      height: 80%;
-    }
-  }
-
 
   .navigation-bar {
     width: 100%;
@@ -32,14 +19,29 @@ header {
     -moz-box-shadow: 2px 3px 3px 1px $color3-shadow;
     box-shadow: 2px 3px 3px 1px $color3-shadow;
 
-    a {
+    &__link {
       display: block;
       text-decoration: none;
       color: $color5;
       padding: 20px 14px;
+      text-align: center;
       @include background-fades-on-hover-to($color1);
-
+      min-width: 120px;
     }
+
+    &__logo {
+      background-color: $color2;
+      width: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+
+      .logo {
+        height: 80%;
+      }
+    }
+
   }
 }
 
