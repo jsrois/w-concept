@@ -30,10 +30,7 @@
 
   &__phrase {
 
-    width: 90%;
-    padding: 0 24px;
     border-radius: 3px;
-    margin-bottom: 18px;
 
     .title {
       background-color: $color2;
@@ -41,10 +38,22 @@
       line-height: 3.6;
       padding: 0 21.3px;
       width: max-content;
+      border-radius: 5px;
+      cursor: pointer;
+      @include background-fades-on-hover-to($color1);
+      @include with-shadow;
 
     }
 
-    @include background-fades-on-hover-to($color1);
+    .description {
+      display: none;
+    }
+
+    &--expand {
+      width: 90%;
+      padding: 0 24px;
+    }
+
 
   }
 }

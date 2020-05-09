@@ -7,3 +7,9 @@
     background-color: $color;
   }
 }
+
+@mixin with-shadow {
+  -webkit-box-shadow: 2px 3px 3px 1px $color3-shadow;
+  -moz-box-shadow: 2px 3px 3px 1px $color3-shadow;
+  box-shadow: 2px 3px 3px 1px $color3-shadow;
+}
