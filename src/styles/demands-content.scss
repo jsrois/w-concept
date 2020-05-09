@@ -6,7 +6,12 @@
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(255,255,255, .5), rgba(255, 255, 255, 0.5)), url('../images/demo_photo_big.png');
+  @media (min-width: 648px) {
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.5)), url('../images/demo_photo_big.png');
+  }
+  @media (max-width: 648px) {
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.5)), url('../images/demo_photo_small.png');
+  }
 
   background-position: center;
   background-repeat: no-repeat;
