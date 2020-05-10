@@ -16,6 +16,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text {
@@ -31,6 +35,11 @@
   &__phrase {
 
     border-radius: 3px;
+    transition: all ease-in-out 1s;
+    width: 90%;
+    padding: 0 24px;
+    background-color: #8c271e44;
+    @include background-fades-on-hover-to(#8c271e66);
 
     .title {
       background-color: $color2;
@@ -40,18 +49,19 @@
       width: max-content;
       border-radius: 5px;
       cursor: pointer;
-      @include background-fades-on-hover-to($color1);
       @include with-shadow;
 
     }
 
     .description {
-      display: none;
+
+      height: auto;
+      width: 100%;
     }
 
-    &--expand {
-      width: 90%;
-      padding: 0 24px;
+    &--selected {
+      .description {
+      }
     }
 
 
