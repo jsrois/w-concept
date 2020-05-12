@@ -1,7 +1,6 @@
 
 .demands-content {
   padding: 32px;
-  width: 100%;
 
   &.hero-image {
     @media (min-width: 648px) {
@@ -36,8 +35,7 @@
         transition: all ease-in-out 1s;
         width: 90%;
         padding: 0 24px;
-        background-color: #8c271e44;
-        @include background-fades-on-hover-to(#8c271e66);
+        //@include background-fades-on-hover-to(#8c271e66);
 
         .title {
           background-color: $color2;

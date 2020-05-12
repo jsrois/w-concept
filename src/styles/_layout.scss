@@ -28,8 +28,12 @@ body {
   &__content {
     flex: auto;
     display: flex;
+    flex-direction: column;
     min-height: $headerHeight;
     margin-top: $headerHeight;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
 
   &__footer {

@@ -1,5 +1,6 @@
 .mainpage-content {
-  width: 80%;
+  width: 100%;
+  min-height: 100vh;
   &.hero-image {
     background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.5)), url('../images/stop_evictions_photo_london.png');
     background-position: center;
