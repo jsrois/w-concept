@@ -12,7 +12,7 @@ const demands = Data.demands as DemandsInfo[];
 const CollapsableDemand = (props: { key: string, title: string, description: string[], onSelection: () => void, selected: boolean }) => {
     return <div className={props.selected ? "hero-text__phrase hero-text__phrase--selected" : "hero-text__phrase"}
                 onMouseUp={props.onSelection}>
-        <p className="title">{props.title}</p>
+        <div className="title">{props.title}</div>
         <div className="description">
             {props.description.map(p => <p>{p}</p>)}
         </div>
