@@ -5,8 +5,8 @@ import {MainPage} from "./MainPage";
 
 export const Content = (): JSX.Element => (
     <div className="vertical-layout__content">
-       <MainPage />
-       <DemandsPage />
-       <OrganizationsPage />
+        <section className="vertical_snap"><MainPage /></section>
+        <section className="vertical_snap"><DemandsPage /></section>
+        <section className="vertical_snap"><OrganizationsPage /></section>
     </div>
 );
